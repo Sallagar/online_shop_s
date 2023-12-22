@@ -1,150 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe Mashine Website</title>
-    <link rel="stylesheet" href="coffe site/shop_icon.png" type="image/x-icon">
-    
+    <title>Stickerz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/alert.css">
+    <link rel="shortcut icon" href="img/baby-yoda.svg" type="image/x-icon">
 </head>
+
 <body>
-        <!--Heder-->
-    <img width="250" src="coffe_site/shop_logo.svg" alt="shop logo">
-    <img width="1000" src="coffe_site/barista_sell_coffe.png" alt="barista">
-    <h5>RENTAL</h5>
-    <h3>Rent a</h3>
-    <h3>Coffe</h3>
-    <h3>Mashine</h3>
-    <p>Need a coffe mashine for commercial or home use? Get one here!</p>
-    <button>Coffee Machines</button>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Stickerz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav ">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#products">Products</a>
+                        <a class="nav-link" href="#">Contacts</a>
+                        <a class="nav-link cart" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                            Cart
+                            <span class="badge bg-dark cart-badge"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="carousel-products" class="carousel slide container" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-products" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-products" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-products" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel-products" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/baby-yoda.svg" class="d-block w-50 mx-auto" alt="Baby Yoda">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banana.svg" class="d-block w-50 mx-auto" alt="Banana">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/girl.svg" class="d-block w-50 mx-auto" alt="Girl">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/viking.svg" class="d-block w-50 mx-auto" alt="Viking">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-products"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-products"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
 
-    <img width="40" src="coffe_site/list_icon.svg" alt="icon">
-    <h3>Warrantly Included</h3>
-    <p>Our company provides a full warranty service and all kinds of high-quality repairs.</p>
+    <main class="container">
+        <h2 id="products">Products</h2>
+        <div class="products-container row">
+        </div>
+    </main>
 
-    <img width="40" src="coffe_site/courier_icon.png" alt="icon">
-    <h3>Next-Day Delivery</h3>
-    <p>We deliver your coffe mashine within 1 day after we conclude the rental agreement.</p>
-
-    <img width="40" src="coffe_site/cash_icon.png" alt="icon">
-    <h3>Affordable Prices</h3>
-    <p>With our low prices, everyone can enjoy coffee from a professional coffee mashine.</p>
-        <!-- End header -->
-        <!-- About Coffee block -->
-    <img width="500" src="coffe_site/wite_cup_coffe.png" alt="icon">
-    <h4>ABOUT</h4>
-    <h3>About Coffee Space</h3>
-    <p>For 10 years, our company has been making sure that you can always drink the most delicious coffee from the best coffee mashines.</p>
-    <p>We offer our customers a wide selection of coffee mashines for different budgets. In addition to the equipment, we also sell coffee beans from the best producers. Our company does everything to ensure that you can enjoy delicious coffee whenever you want.</p>
-    
-    <img width="20" src="coffe_site/red_tick.svg" alt="icon">
-    <h5>For offices and commercial use</h5>
-    <p>We offer our corporate clients coffee machines with high performance. You can rent a coffee machine for use in offece kithens and coffee shops.</p>
-
-    <img width="20" src="coffe_site/red_tick.svg" alt="icon">
-    <h5>For your home</h5>
-    <p>If you want to enjoy delicious and aromatic coffee at home, you will find budget and compact options in our store.</p>
-
-    <img width="200" src="coffe_site/types_coffe.png" alt="img">
-    <h4>Indulgo Z9</h4>
-    <p>Powerful coffee machine for delicious coffee.</p>
-
-    <img width="200" src="coffe_site/girl_with_coffe.png" alt="img">
-    <h4>Espresso Coffee Beans</h4>
-    <h5>Just</h5>
-    <h4>$ 4.00</h4>
-    <p>Order Now</p>
-        <!--End About Coffee block -->
-        <!-- How to Rent -->
-
-    <p>STEPS</p>
-
-    <h2>How to Rent a coffee Mashine</h2>
-    <p>You're just 4 easy steps from great coffee.</p>
-
-    <img width="200" src="coffe_site/silver_coffe_mashing_on_the_kitchen.png" alt="img">
-    <p>01. Select a Coffee Machine</p>
-    <p>In our online store, you will find coffee machines of any size and performance.</p>
-    
-    <img width="200" src="coffe_site/barista.png" alt="img">
-    <p>02. Send a Request</p>
-    <p>Add the coffee machine to the cart, and our manager will contact you soon to conclude the agreement.</p>
-    
-    <img width="200" src="coffe_site/postman_&_client.png" alt="img">
-    <p>03. Expect Delivery</p>
-    <p>Delivery of the coffee machine is carried out within a day after the confirmation of your order.</p>
-
-    <img width="200" src="coffe_site/black_coffe-masing_with_mocachino.png" alt="img">
-    <p>04. Enjoy Delicious Coffee</p>
-    <p>We will connect and configure the coffee machine, you just have to press the button and enjoy!</p>    
-    <!-- End How to Rent block-->
-    <!-- SPECIAL -->
-    <img width="1000" src="coffe_site/red_background.png" alt="background">
-    <p>SPECIAL</p>
-    <h2>Introducing SMIK Original 2022</h2>
-    <p>We're delighted to announce that one of the most stylish and high-performing coffee machines by the famous Italian brand is now available for rent!</p>
-    <img width="300" src="coffe_site/red_coffe-mashing.png" alt="img">
-    <button>Rent Now</button>
-    <button>Characteristics</button>
-    <img width="200" src="coffe_site/lavazza.png" alt="logo">
-    <img width="200" src="coffe_site/folgers.png" alt="logo">
-    <img width="200" src="coffe_site/frontier.png" alt="logo">
-    <img width="200" src="coffe_site/melitta.png" alt="logo">
-    <img width="200" src="coffe_site/green_mountain.png" alt="logo">
-    <img width="200" src="coffe_site/monarch.png" alt="logo">
-    <img width="200" src="coffe_site/costa.png" alt="logo">
-    <!-- End SPECIAL -->
-
-    <!-- Discover block -->
-    <p>COFFEE MASHINES</p>
-    <h2>Discover Coffee Machines We Offer</h2>
-    <p>We offer professional coffee machines for commercial and home use.</p>
-    
-    <p><img width="100" src="coffe_site/coffe-mashing_with_milk.png" alt="img"></p>
-    <p>FROST Coffee Machine</p>
-    <p>199,00USD</p>
-    <button>Add to Cart</button>
-
-    <p><img width="100" src="coffe_site/red_coffe-mashing_with_2_cup.png" alt="img"></p>
-    <p>SMIK 2 Coffee Machine</p>
-    <p>299,00USD</p>
-    <button>Add to Cart</button>
-
-    <p><img width="100" src="coffe_site/black_cofe-mashing.png" alt="img"></p>
-    <p>ORGANIC Coffee Machine</p>
-    <p>299,00USD</p>
-    <button>Add to Cart</button>
-
-    <p><img width="100" src="coffe_site/coffe-mashing_with_cup.png" alt="img"></p>
-    <p>SMIK Coffee Machine</p>
-    <p>199,00USD</p>
-    <button>Add to Cart</button>
-
-    <p><img width="100" src="coffe_site/pro_coffee_machine.png" alt="img"></p>
-    <p>SMIK Coffee Machine</p>
-    <p>499,00USD</p>
-    <button>Add to Cart</button>
-    <!-- End Discover Block -->
-    <!-- EXCEPTIONAL Block -->
-    <img src="coffe_site/date_with_coffe.png" alt="img">
-    <p>EXCEPTIONAL TASTE</p>
-    <h2>Divine Aroma in Every Cup</h2>
-    <p>We supply our customers with only the best coffee and professional coffee machines. Thanks to our rental service, you can enjoy really exceptional coffee for affordable price.</p>
-    <p>Good coffee is an energy boost for the whole day and the source of a good mood. We at Coffee Space understand this better than anyone else, and for 10 years now we have been offering our customers reliable coffee equipment and the best varieties of coffee beans.</p>
-    
-    <img width="50" src="coffe_site/bean_logo.png" alt="logo">
-    <p>Best Beans</p>
-    <p>Our partner is Golden Peak, one of the best coffee producers in the world. With the coffee machine rental, you can also order any coffee variety you prefer.</p>
-
-    <img width="50" src="coffe_site/cup_logo.png" alt="logo">
-    <p>Always on Time</p>
-    <p>Our experts will deliver your order strictly on the specified day and at the specified time. We carry out regular deliveries in accordance with your wishes.</p>
-
-    <img width="50" src="coffee_machine_logo.png" alt="logo">
-    <p>Variety of Coffee Machines</p>
-    <p>We are providers of bean-to-cup coffee machines and professional equipment for offices and coffee shops. We offer affordable rental solutions.</p>
+    <div class="alert-container container"></div>
 
 
+    <!-- Modal Product Info -->
+    <div class="modal fade" id="product-info-modal" tabindex="-1" aria-labelledby="product-info-modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="product-info-modalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="d-block w-50 mx-auto product-image" src="img/baby-yoda.svg" alt="Baby Yoda">
+                    <p class="product-description"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn-buy"><span class="product-price"></span> -
+                        Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cart -->
+    <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="product-info-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartLabel">Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-product-list-container cart-container"></div>
+                    <hr>
+                    <div class="container">
+                        <form class="form-contacts">
+                            <div class="form-group row">
+                                <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                                <input class="form-control col-8" type="text" id="client-name" name="name" required>
+                            </div>
+                            <div class="form-group row">
+                                <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                                <input class="form-control col-8" type="email" id="client-email" name="email" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary order">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/alert.js"></script>
+    <script src="js/products-service.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-list.js"></script>
 </body>
+
 </html>
